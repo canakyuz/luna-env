@@ -1,3 +1,5 @@
+![](/assets/luna-banner.png)
+
 Aşağıda, Luna projesinin README.md dosyasını son güncellemelerle güncellenmiş olarak bulabilirsiniz. Bu sürüm, projenin son yapılandırmalarını, yeni özellikleri ve daha ayrıntılı kullanım talimatlarını içerecek şekilde hazırlanmıştır.
 
 ---
@@ -25,6 +27,7 @@ Bu README belgesi, Luna AI Asistanını kurma, kullanma ve geliştirme konusunda
 ## **Proje Genel Bakış**
 
 Luna, Jarvis benzeri bir AI asistanıdır ve şu yeteneklere sahiptir:
+
 - Doğal dil anlama ve üretme (NLP)
 - Görsel tanıma ve görüntü işleme (Computer Vision)
 - Sürekli öğrenme yoluyla kendini geliştirme
@@ -140,7 +143,8 @@ docker run -d -p 8000:8000 luna-ai
 
 Sunucu çalıştırıldığında, Luna ile API uç noktaları üzerinden etkileşime geçebilirsiniz. Örnekler:
 
-- **NLP Uç Noktası:** `http://localhost:8000/ask/` 
+- **NLP Uç Noktası:** `http://localhost:8000/ask/`
+
   - Bir sorgu ile POST isteği gönderin ve Luna'nın yanıtlarını alın.
 
 - **Görüntü İşleme Uç Noktası:** `http://localhost:8000/process-image/`
@@ -149,20 +153,24 @@ Sunucu çalıştırıldığında, Luna ile API uç noktaları üzerinden etkile�
 ## **Proje Bileşenleri**
 
 ### **1. NLP Modülü (`src/nlp`)**
+
 - **`model_training.py`**: GPT veya BERT gibi NLP modellerinin eğitimi için scriptler.
 - **`text_generation.py`**: Eğitilmiş modeller ile metin üretimi gerçekleştirir.
 - **`sentiment_analysis.py`**: Metinlerin duygusal tonunu anlamak için kullanılır.
 
 ### **2. Vision Modülü (`src/vision`)**
+
 - **`object_detection.py`**: Görüntülerde nesne tanıma ve sınıflandırma işlemlerini gerçekleştirir.
 - **`ocr.py`**: Görsellerden metin çıkarımı için OCR tekniklerini kullanır.
 - **`image_processing.py`**: Görüntü analizleri için ön işleme yapar.
 
 ### **3. Reinforcement Learning Modülü (`src/rl`)**
+
 - **`reinforcement_learning.py`**: Luna'nın sürekli öğrenme sürecini destekleyen RL algoritmalarını içerir.
 - **`simulations/`**: Eğitim ortamları ve simülasyon ayarları.
 
 ### **4. API Modülü (`src/api`)**
+
 - **`app.py`**: Luna'nın işlevlerini sunan FastAPI uygulaması.
 - **`routes/`**: Farklı işlevler için rota tanımları ve yöneticiler.
 
