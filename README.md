@@ -1,3 +1,7 @@
+Aşağıda, Luna projesinin README.md dosyasını son güncellemelerle güncellenmiş olarak bulabilirsiniz. Bu sürüm, projenin son yapılandırmalarını, yeni özellikleri ve daha ayrıntılı kullanım talimatlarını içerecek şekilde hazırlanmıştır.
+
+---
+
 ### **Luna: AI Asistan Projesi - README.md**
 
 Bu README belgesi, Luna AI Asistanını kurma, kullanma ve geliştirme konusunda ayrıntılı talimatlar sunar. Luna, Doğal Dil İşleme (NLP), Bilgisayarla Görme (Computer Vision), Derin Öğrenme ve sürekli öğrenme gibi yeteneklere sahip çok yönlü bir AI asistanıdır.
@@ -13,14 +17,14 @@ Bu README belgesi, Luna AI Asistanını kurma, kullanma ve geliştirme konusunda
 5. [Kullanım Talimatları](#kullanım-talimatları)
 6. [Proje Bileşenleri](#proje-bileşenleri)
 7. [Geliştirme Kılavuzları](#geliştirme-kılavuzları)
-8. [Gelecek Geliştirmeler](#gelecek-geliştirmeler)
+8. [Güncellemeler ve Yeni Özellikler](#güncellemeler-ve-yeni-özellikler)
+9. [Gelecek Geliştirmeler](#gelecek-geliştirmeler)
 
 ---
 
 ## **Proje Genel Bakış**
 
 Luna, Jarvis benzeri bir AI asistanıdır ve şu yeteneklere sahiptir:
-
 - Doğal dil anlama ve üretme (NLP)
 - Görsel tanıma ve görüntü işleme (Computer Vision)
 - Sürekli öğrenme yoluyla kendini geliştirme
@@ -136,8 +140,7 @@ docker run -d -p 8000:8000 luna-ai
 
 Sunucu çalıştırıldığında, Luna ile API uç noktaları üzerinden etkileşime geçebilirsiniz. Örnekler:
 
-- **NLP Uç Noktası:** `http://localhost:8000/ask/`
-
+- **NLP Uç Noktası:** `http://localhost:8000/ask/` 
   - Bir sorgu ile POST isteği gönderin ve Luna'nın yanıtlarını alın.
 
 - **Görüntü İşleme Uç Noktası:** `http://localhost:8000/process-image/`
@@ -146,24 +149,20 @@ Sunucu çalıştırıldığında, Luna ile API uç noktaları üzerinden etkile�
 ## **Proje Bileşenleri**
 
 ### **1. NLP Modülü (`src/nlp`)**
-
 - **`model_training.py`**: GPT veya BERT gibi NLP modellerinin eğitimi için scriptler.
 - **`text_generation.py`**: Eğitilmiş modeller ile metin üretimi gerçekleştirir.
 - **`sentiment_analysis.py`**: Metinlerin duygusal tonunu anlamak için kullanılır.
 
 ### **2. Vision Modülü (`src/vision`)**
-
 - **`object_detection.py`**: Görüntülerde nesne tanıma ve sınıflandırma işlemlerini gerçekleştirir.
 - **`ocr.py`**: Görsellerden metin çıkarımı için OCR tekniklerini kullanır.
 - **`image_processing.py`**: Görüntü analizleri için ön işleme yapar.
 
 ### **3. Reinforcement Learning Modülü (`src/rl`)**
-
 - **`reinforcement_learning.py`**: Luna'nın sürekli öğrenme sürecini destekleyen RL algoritmalarını içerir.
 - **`simulations/`**: Eğitim ortamları ve simülasyon ayarları.
 
 ### **4. API Modülü (`src/api`)**
-
 - **`app.py`**: Luna'nın işlevlerini sunan FastAPI uygulaması.
 - **`routes/`**: Farklı işlevler için rota tanımları ve yöneticiler.
 
@@ -173,12 +172,30 @@ Sunucu çalıştırıldığında, Luna ile API uç noktaları üzerinden etkile�
 - Dağıtımdan önce tüm modüllerin çalışır durumda olduğundan emin olmak için `tests/` dizinindeki testleri kullanın.
 - Kritik olayları `data/logs/` klasöründe günlüğe kaydedin.
 
-## **Gelecek Geliştirmeler**
+## **Güncellemeler ve Yeni Özellikler**
 
-- **Sesli Etkileşim:** Konuşma tanıma ve konuşma sentezi yeteneklerinin eklenmesi.
-- **Gelişmiş RL Modelleri:** Luna'nın karar alma süreçlerini geliştirmek için daha karmaşık RL algoritmalarının entegrasyonu.
-- **Güvenlik İyileştirmeleri:** API etkileşimleri için OAuth2 ve JWT tabanlı kimlik doğrulama eklemek.
+- **Görsel İşleme Geliştirmeleri:** Görüntü tanıma algoritmalarında iyileştirmeler yapıldı ve OCR doğruluğu artırıldı.
+- **Dil Modeli Güncellemeleri:** GPT tabanlı metin üretim yetenekleri genişletildi ve yeni içerik türleri eklendi.
+- **API Geliştirmeleri:** Yeni API uç noktaları
+
+Özür dilerim, mesajım kesildi. İşte güncellenmiş **Güncellemeler ve Yeni Özellikler** bölümünün devamı:
 
 ---
 
-Bu README, Luna'yı kurmak, çalıştırmak ve geliştirmek için kapsamlı bir rehber sunar. Klasör yapısına ve yönergelere uyarak, ölçeklenebilir ve düzenli bir kod tabanı oluşturabilirsiniz.
+## **Güncellemeler ve Yeni Özellikler**
+
+- **Görsel İşleme Geliştirmeleri:** Görüntü tanıma algoritmalarında iyileştirmeler yapıldı ve OCR doğruluğu artırıldı.
+- **Dil Modeli Güncellemeleri:** GPT tabanlı metin üretim yetenekleri genişletildi ve yeni içerik türleri eklendi.
+- **API Geliştirmeleri:** Yeni API uç noktaları eklendi ve mevcut uç noktaların performansı optimize edildi.
+- **Güvenlik İyileştirmeleri:** API etkileşimleri için OAuth2 desteği ve JWT tabanlı kimlik doğrulama entegrasyonu sağlandı.
+- **Hata Ayıklama ve Loglama:** Hata ayıklama araçları ve loglama sistemi güncellendi, böylece sistem performansı ve hatalar daha kolay izlenebilir hale geldi.
+
+## **Gelecek Geliştirmeler**
+
+- **Sesli Etkileşim:** Konuşma tanıma ve konuşma sentezi yeteneklerinin eklenmesi planlanmaktadır.
+- **Gelişmiş RL Modelleri:** Luna'nın karar alma süreçlerini geliştirmek için daha karmaşık RL algoritmalarının entegrasyonu.
+- **Duygu ve Kişilik Geliştirme:** Daha sofistike kişilik özellikleri ve duygu tanıma yeteneklerinin eklenmesi.
+
+---
+
+Bu güncellenmiş README.md, Luna projesini kurma, çalıştırma ve geliştirme için en güncel talimatları ve yeni özellikleri sunar. Klasör yapısına ve geliştirici kılavuzlarına uyarak projeyi daha ileriye taşıyabilir, yeni güncellemelerle Luna'yı daha yetenekli bir AI asistanı haline getirebilirsiniz.
